@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Quicksand";
+  src: local("quicksand"), local("quicksand"), url("https://fonts.gstatic.com/s/quicksand/v7/6xKodSZaM9iE8KbpRA_pgHYYT8L_.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.boring{
+    font-size:10px;
+}
+.footer{
+    background-color:black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: "#8c8c8c";
+    color: white;
+    text-align: center;
+
+}
+
+footer *{
+    display:inline;
+}
+
+
+.titles{
+text-align:center;
+}
+
+
+main{
+margin-top:5%;}
+
+
+.navbar-brand{
+margin-left:10%;
+}
+
+.media{
+background-color:black;
+height:100%;
+color:white;
+}
+
+.media-icons{
+    margin-right:20px;
+    margin-left:0;
+    width:60px;
+}
+
+div ul{
+list-style: none;
+    padding: 0;
+}
+
+
+#my-image{
+width:300px;
+height:300px;
+border-radius: 50%;
+display: inline;
+
+}
+#text-holder{
+    float:right;
+    margin-right: 10%;
+}
+
+* {
+font-family: "quicksand"
+}
+
+
+.summary{
+margin-top:65px;
+margin-left:90px;
+}
+
+
+.icon-500{
+}
