@@ -1,3 +1,4 @@
+Sitemap: https://ahmadjd.com/sitemap.txt
 User-agent: *
 https://ahmadjd.com/ 2020-01-03T22:51:24+00:00 
-https://ahmadjd.com/sitemap.txt
+
