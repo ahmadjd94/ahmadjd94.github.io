@@ -3,6 +3,7 @@
   src: local("quicksand"), local("quicksand"), url("https://fonts.gstatic.com/s/quicksand/v7/6xKodSZaM9iE8KbpRA_pgHYYT8L_.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
+  color: white;
   unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -18,7 +19,6 @@
     background-color: "#8c8c8c";
     color: white;
     text-align: center;
-
 }
 
 footer *{
@@ -31,8 +31,12 @@ text-align:center;
 }
 
 
-main{
-margin-top:5%;}
+.main{
+    display: flex;
+    flex-direction: row;
+  }
+  
+
 
 
 .navbar-brand{
@@ -40,9 +44,9 @@ margin-left:10%;
 }
 
 .media{
-background-color:black;
-height:100%;
-color:white;
+background-color:rgb(255, 255, 255);
+height:95%;
+margin: auto;
 }
 
 .media-icons{
@@ -77,8 +81,122 @@ font-family: "quicksand"
 .summary{
 margin-top:65px;
 margin-left:90px;
+color:#fff
 }
 
 
 .icon-500{
 }
+
+.animated-header {
+    position: relative;
+    overflow: hidden;
+    background: #333; /* Fallback background color */
+}
+
+.wave-container {
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom, #ff9900, #ff0066, #8b00ad, #ff6ebe);
+    animation: wave 10s linear infinite alternate;
+}
+
+
+
+@keyframes padding-change {
+    0% {
+      bottom-padding: 10px;
+    }
+    20% {
+      bottom-padding: 20px;
+    }
+    60% {
+        bottom-padding: 60px;
+      }
+    70% {
+    bottom-padding: 70px;
+        }
+    100% {
+      bottom-padding: 10px;
+    }
+  }
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes wave-mobile {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes rotate-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+.header-content {
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    position: relative;
+    z-index: 1; /* Place above the wave animation */
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+}
+
+.header-content p {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .my-image,
+    .flex-item2 {
+        width: 50%;
+    }
+
+    .wave-container {
+        position: absolute;
+        left: 0;
+        width: 768px;
+        height: 900px;
+        background: linear-gradient(to right,#ffb13d, #ff9900, #ff0066, #8b00ad);
+        animation: wave-mobile 3s linear infinite alternate;
+    }
+    .summary{
+        margin: auto;
+        color:#fff
+        }
+        .purple-wave{
+            width: 1000px;
+            height: 1000px;
+            background-image: linear-gradient(to top, purple, transparent);
+            border-radius: 50%;
+            animation: rotate-animation 10s infinite;
+            position: absolute;
+            margin: -35%;
+        }
+}
+
