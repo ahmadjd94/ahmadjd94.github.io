@@ -69,7 +69,6 @@ body {
     max-width: 500px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* Transparent background as requested */
-    border-radius: 15px;
     backdrop-filter: blur(2px); /* Reduced blur effect as requested */
     -webkit-backdrop-filter: blur(2px); /* For Safari */
     display: flex;
